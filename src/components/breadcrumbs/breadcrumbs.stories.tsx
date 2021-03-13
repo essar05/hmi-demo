@@ -1,6 +1,7 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react/types-6-0";
-import { Breadcrumbs, BreadcrumbsProps } from "./breadcrumbs";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import { Breadcrumbs, IBreadcrumbsProps } from "./breadcrumbs";
+import { Icon, Icons } from "../icon/icon";
 
 export default {
   title: "Components/Breadcrumbs",
@@ -8,7 +9,19 @@ export default {
   argTypes: {}
 } as Meta;
 
-const Template: Story<BreadcrumbsProps> = (args) => <Breadcrumbs {...args} />;
+const Template: Story<IBreadcrumbsProps> = (args) => <Breadcrumbs {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {};
+Default.args = {
+  items: [
+    {
+      label: <Icon name={Icons.HOME} />
+    },
+    {
+      label: "Programmes"
+    },
+    {
+      label: "Favorites"
+    }
+  ]
+};

@@ -1,1 +1,13 @@
-$default-font: "Roboto Condensed", serif;
+@import "colors";
+
+$font-default: 'Roboto Condensed', serif;
+
+$grid-size: 0.2rem;
+
+$spacing-xs: $grid-size;
+$spacing-sm: $grid-size * 2;
+$spacing-md: $grid-size * 3;
+$spacing-lg: $grid-size * 4;
+
+$color-default: $white;
+$color-primary: $orange;

@@ -1,0 +1,26 @@
+@import "/src/assets/styles/variables";
+
+$spacing: $spacing-sm;
+
+.hmi-breadcrumbs {
+  display: flex;
+
+  .hmi-breadcrumb {
+    display: block;
+    margin-right: $spacing;
+    opacity: 0.5;
+
+    &:first-child {
+      opacity: 1;
+
+      &:after {
+        opacity: 0.5;
+      }
+    }
+
+    &:not(:last-child):after {
+      content: "|";
+      margin-left: $spacing;
+    }
+  }
+}

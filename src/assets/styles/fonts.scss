@@ -2,7 +2,7 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-display: block;
-  src: url("/assets/fonts/roboto/roboto-condensed-v19-latin-regular.woff2") format("woff2"), url("/assets/fonts/roboto/roboto-condensed-v19-latin-regular.woff") format("woff"), "/assets/fonts/roboto/roboto-condensed-v19-latin-regular.ttf" format("truetype");
+  src: url("../fonts/roboto/roboto-condensed-v19-latin-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-condensed-v19-latin-regular.woff") format("woff"), url("../fonts/roboto/roboto-condensed-v19-latin-regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("/assets/fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("/assets/fonts/fontawesome/fa-solid-900.woff") format("woff"), url("/assets/fonts/fontawesome/fa-solid-900.ttf") format("truetype");
+  src: url("../fonts/fontawesome/fa-solid-900.woff2") format("woff2"), url("../fonts/fontawesome/fa-solid-900.woff") format("woff"), url("../fonts/fontawesome/fa-solid-900.ttf") format("truetype");
 }
 
 .fa {

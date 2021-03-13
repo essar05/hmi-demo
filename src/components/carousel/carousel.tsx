@@ -1,12 +1,12 @@
 import React from "react";
 import "./carousel.scss";
 
-export interface CarouselProps {}
+export interface ICarouselProps {}
 
 /**
  * Carousel
  */
-export const Carousel: React.FunctionComponent<CarouselProps> = () => {
+export const Carousel: React.FunctionComponent<ICarouselProps> = () => {
   return (
     <></>
   );

@@ -1,5 +1,6 @@
 @import "variables";
 @import "fonts";
+@import "icons";
 
 * {
   margin: 0;
@@ -7,5 +8,10 @@
 }
 
 body {
-  font-family: $default-font;
+  font-family: $font-default;
+  font-weight: 400;
+  font-size: 1.45rem;
+
+  background-color: $gray-dark;
+  color: $color-default;
 }
