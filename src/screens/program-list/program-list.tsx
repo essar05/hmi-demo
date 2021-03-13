@@ -4,7 +4,7 @@ import "./program-list.scss";
 export interface ProgramListProps {}
 
 /**
- * Program list
+ * Program list screen
  */
 export const ProgramList: React.FunctionComponent<ProgramListProps> = () => {
   return (
