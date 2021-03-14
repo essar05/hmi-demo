@@ -1,0 +1,11 @@
+.hmi-header {
+  display: flex;
+
+  .hmi-header-left {
+    flex: 1 1 auto;
+  }
+
+  .hmi-header-right {
+    flex: 0 0 auto;
+  }
+}

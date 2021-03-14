@@ -5,13 +5,29 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html {
+  font-family: $font-default;
+  font-weight: 400;
+  font-size: 8vh;
+  line-height: 8vh;
 }
 
 body {
-  font-family: $font-default;
-  font-weight: 400;
-  font-size: 1.45rem;
-
   background-color: $gray-dark;
   color: $color-default;
+}
+
+.sb-show-main.sb-main-padded {
+  padding: 0;
+}
+
+.hmi-sb.hmi-sb-padded {
+  padding: 0.25rem;
 }

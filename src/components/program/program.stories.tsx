@@ -1,14 +1,15 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { Program, IProgramProps } from "./program";
+import { Program as CProgram, IProgramProps } from "./program";
 
 export default {
   title: "Components/Program",
-  component: Program,
+  component: CProgram,
+  decorators: [(Story) => <div className="hmi-sb hmi-sb-padded"><Story/></div>],
   argTypes: {}
 } as Meta;
 
-const Template: Story<IProgramProps> = (args) => <Program {...args} />;
+const Template: Story<IProgramProps> = (args) => <CProgram {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {};
+export const Program = Template.bind({});
+Program.args = {};

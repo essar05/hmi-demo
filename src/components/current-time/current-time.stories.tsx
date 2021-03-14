@@ -1,14 +1,15 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { CurrentTime, CurrentTimeProps } from "./current-time";
+import { CurrentTime as CCurrentTime, CurrentTimeProps } from "./current-time";
 
 export default {
   title: "Components/Current Time",
-  component: CurrentTime,
+  component: CCurrentTime,
+  decorators: [(Story) => <div className="hmi-sb hmi-sb-padded"><Story/></div>],
   argTypes: {}
 } as Meta;
 
-const Template: Story<CurrentTimeProps> = (args) => <CurrentTime {...args} />;
+const Template: Story<CurrentTimeProps> = (args) => <CCurrentTime {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {};
+export const CurrentTime = Template.bind({});
+CurrentTime.args = {};

@@ -1,0 +1,18 @@
+.hmi-main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+
+  .hmi-header {
+    flex: 0 0 auto;
+  }
+
+  .hmi-content {
+    flex: 1 0 auto;
+  }
+
+  .hmi-footer {
+    flex: 0 0 auto;
+  }
+}
+
