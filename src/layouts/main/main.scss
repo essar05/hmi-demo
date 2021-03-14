@@ -3,6 +3,10 @@
   height: 100%;
   flex-direction: column;
 
+  > div:not(:last-child) {
+    border-bottom: 0.05rem solid #444;
+  }
+
   .hmi-header {
     flex: 0 0 auto;
   }

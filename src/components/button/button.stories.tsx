@@ -11,7 +11,13 @@ export default {
 
 const Template: Story<IButtonProps> = (args) => <CButton {...args} />;
 
-export const Button = Template.bind({});
-Button.args = {
+export const Default = Template.bind({});
+Default.args = {
   label: "Button"
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  label: "Disabled",
+  disabled: true
 };

@@ -17,8 +17,8 @@ export const CurrentTime: React.FunctionComponent<CurrentTimeProps> = () => {
   }, []);
 
   return (
-    <>
+    <div>
       {time}
-    </>
+    </div>
   );
 };

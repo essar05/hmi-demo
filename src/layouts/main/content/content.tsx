@@ -1,13 +1,17 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./content.scss";
 
-export interface IContentProps {}
+export interface IContentProps {
+  children?: ReactNode;
+}
 
 /**
  * Main layout content wrapper
  */
-export const Content: React.FunctionComponent<IContentProps> = () => {
+export const Content: React.FunctionComponent<IContentProps> = ({children}) => {
   return (
-    <div className="hmi-content"></div>
+    <div className="hmi-content">
+      {children}
+    </div>
   );
 };

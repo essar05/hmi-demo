@@ -2,11 +2,11 @@
 
 $font-default: 'Roboto Condensed', serif;
 
-$grid-size: 0.2rem;
+$grid-size: 0.25rem;
 
-$spacing-xs: $grid-size;
-$spacing-sm: $grid-size * 2;
-$spacing-md: $grid-size * 3;
+$spacing-xs: $grid-size / 2;
+$spacing-sm: $grid-size;
+$spacing-md: $grid-size * 2;
 $spacing-lg: $grid-size * 4;
 
 $color-default: $white;

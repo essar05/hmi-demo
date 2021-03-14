@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.scss";
+import { Button } from "../../../components/button/button";
 
 export interface IFooterProps {}
 
@@ -8,6 +9,9 @@ export interface IFooterProps {}
  */
 export const Footer: React.FunctionComponent<IFooterProps> = () => {
   return (
-    <div className="hmi-footer"></div>
+    <div className="hmi-footer">
+      <Button label="Back" />
+      <Button label="Inactive Button" disabled />
+    </div>
   );
 };

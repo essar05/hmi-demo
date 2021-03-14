@@ -8,15 +8,15 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html, body, #root, .hmi-sb {
   height: 100%;
 }
 
 html {
   font-family: $font-default;
   font-weight: 400;
-  font-size: 8vh;
-  line-height: 8vh;
+  font-size: 8.6vh;
+  line-height: 0.9;
 }
 
 body {

@@ -12,10 +12,8 @@ export interface IHeaderProps {}
 export const Header: React.FunctionComponent<IHeaderProps> = () => {
   return (
     <div className="hmi-header">
-      <Breadcrumbs className="hmi-header-left" items={breadcrumbs}/>
-      <div className="hmi-header-right">
-        <CurrentTime/>
-      </div>
+      <Breadcrumbs items={breadcrumbs}/>
+      <CurrentTime/>
     </div>
   );
 };
