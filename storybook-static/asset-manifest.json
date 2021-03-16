@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.da950948.chunk.css",
+    "main.js": "./main.90bc613b0853757863fc.bundle.js",
+    "main.css.map": "./static/css/main.da950948.chunk.css.map",
+    "main.js.map": "./main.90bc613b0853757863fc.bundle.js.map",
+    "runtime~main.js": "./runtime~main.90bc613b0853757863fc.bundle.js",
+    "runtime~main.js.map": "./runtime~main.90bc613b0853757863fc.bundle.js.map",
+    "vendors~main.js": "./vendors~main.90bc613b0853757863fc.bundle.js",
+    "vendors~main.js.map": "./vendors~main.90bc613b0853757863fc.bundle.js.map",
+    "iframe.html": "./iframe.html",
+    "static/media/index.scss": "./static/media/roboto-condensed-v19-latin-regular.fd55075a.woff2",
+    "vendors~main.90bc613b0853757863fc.bundle.js.LICENSE.txt": "./vendors~main.90bc613b0853757863fc.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.90bc613b0853757863fc.bundle.js",
+    "vendors~main.90bc613b0853757863fc.bundle.js",
+    "static/css/main.da950948.chunk.css",
+    "main.90bc613b0853757863fc.bundle.js"
+  ]
+}

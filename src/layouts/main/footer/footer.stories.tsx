@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { Footer as CFooter, IFooterProps } from "./footer";
+import { Footer as CFooter } from "./footer";
 
 export default {
   title: "Layouts/Main/Components/Footer",
@@ -9,7 +9,7 @@ export default {
   argTypes: {}
 } as Meta;
 
-const Template: Story<IFooterProps> = (args) => <CFooter {...args} />;
+const Template: Story<Record<string, never>> = (args) => <CFooter {...args} />;
 
 export const Footer = Template.bind({});
 Footer.args = {};

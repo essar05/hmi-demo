@@ -1,6 +1,6 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { Header as CHeader, IHeaderProps } from "./header";
+import { Header as CHeader } from "./header";
 
 export default {
   title: "Layouts/Main/Components/Header",
@@ -9,7 +9,7 @@ export default {
   argTypes: {}
 } as Meta;
 
-const Template: Story<IHeaderProps> = (args) => <CHeader {...args} />;
+const Template: Story<Record<string, never>> = (args) => <CHeader {...args} />;
 
 export const Header = Template.bind({});
 Header.args = {};
