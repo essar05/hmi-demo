@@ -1,0 +1,25 @@
+@import "/src/assets/styles/variables";
+
+.hmi-program {
+  text-align: center;
+  padding-left: $spacing-lg;
+
+  &--active {
+    color: $color-primary;
+  }
+
+  .hmi-program-icon {
+    display: block;
+    padding: $spacing-lg 0;
+    font-size: 2.5rem;
+  }
+
+  .hmi-program-title {
+    padding: $spacing-sm;
+    white-space: nowrap;
+  }
+  .hmi-program-subtitle {
+    padding: $spacing-sm;
+    white-space: nowrap;
+  }
+}

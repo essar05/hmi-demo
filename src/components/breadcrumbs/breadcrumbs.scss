@@ -21,6 +21,7 @@ $spacing: 0.3rem;
     &:not(:last-child):after {
       content: "|";
       margin-left: $spacing;
+      vertical-align: top;
     }
   }
 }

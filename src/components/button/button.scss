@@ -1,4 +1,4 @@
-@import "../../assets/styles/variables";
+@import "/src/assets/styles/variables";
 
 .hmi-button {
   margin: 0;
@@ -15,8 +15,11 @@
   }
 
   &:hover, &:focus, &:active {
+    outline: none;
+  }
+
+  &:active {
     &:not(:disabled) {
-      outline: none;
       color: $color-primary;
     }
   }

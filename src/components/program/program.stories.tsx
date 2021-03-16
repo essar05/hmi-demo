@@ -1,6 +1,7 @@
 import React from "react";
-import { Story, Meta } from "@storybook/react/types-6-0";
-import { Program as CProgram, IProgramProps } from "./program";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import { IProgramProps, Program as CProgram } from "./program";
+import { Icons } from "../icon/icon";
 
 export default {
   title: "Components/Program",
@@ -12,4 +13,8 @@ export default {
 const Template: Story<IProgramProps> = (args) => <CProgram {...args} />;
 
 export const Program = Template.bind({});
-Program.args = {};
+Program.args = {
+  icon: Icons.AIRPLANE,
+  title: "Title",
+  subtitle: "Subtitle"
+};

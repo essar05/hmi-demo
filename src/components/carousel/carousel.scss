@@ -1,0 +1,24 @@
+@import "/src/assets/styles/variables";
+
+.hmi-carousel-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  padding: $spacing-md + $spacing-xs 0 0 0;
+
+  cursor: pointer;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .hmi-carousel {
+    display: flex;
+    position: absolute;
+  }
+}

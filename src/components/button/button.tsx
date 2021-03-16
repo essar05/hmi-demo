@@ -15,6 +15,10 @@ export interface IButtonProps {
    * Custom CSS class
    */
   className?: string;
+  /**
+   * Custom click handler
+   */
+  onClick?: () => void;
 }
 
 /**
@@ -23,18 +27,19 @@ export interface IButtonProps {
 export const Button: React.FunctionComponent<IButtonProps> = ({
   label,
   disabled,
-  className
+  className,
+  onClick
 }) => {
   const buttonClass = classnames(
     "hmi-button",
-    className,
-    { "hmi-button--disabled": disabled }
+    className
   );
 
   return (
     <button
       className={buttonClass}
       disabled={disabled}
+      onClick={onClick}
     >{label}</button>
   );
 };
