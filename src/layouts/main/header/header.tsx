@@ -4,12 +4,10 @@ import { Breadcrumbs } from "../../../components/breadcrumbs/breadcrumbs";
 import { CurrentTime } from "../../../components/current-time/current-time";
 import { Icon, Icons } from "../../../components/icon/icon";
 
-export interface IHeaderProps {}
-
 /**
  * Main layout header
  */
-export const Header: React.FunctionComponent<IHeaderProps> = () => {
+export const Header: React.VoidFunctionComponent = () => {
   return (
     <div className="hmi-header">
       <Breadcrumbs items={breadcrumbs}/>

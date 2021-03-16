@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-color: $gray-dark;
+  background-color: $color-background;
   color: $color-default;
 }
 
@@ -30,4 +30,22 @@ body {
 
 .hmi-sb.hmi-sb-padded {
   padding: 0.25rem;
+}
+
+.hmi-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  transition: background-color 0.5s ease;
+
+  pointer-events: none;
+  background-color: transparent;
+
+  &--active {
+    background-color: $gray-transparent;
+    pointer-events: all;
+  }
 }

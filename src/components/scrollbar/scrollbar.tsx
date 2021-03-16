@@ -13,7 +13,7 @@ export interface IScrollbarProps {
 }
 
 /**
- * Program
+ * Scrollbar
  */
 export const Scrollbar: React.FunctionComponent<IScrollbarProps> = ({progress, progressBarWidth = 20}) => {
   const leftOffset = progress / (100 / (100 - progressBarWidth));

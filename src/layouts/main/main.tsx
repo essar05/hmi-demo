@@ -5,6 +5,9 @@ import { Content } from "./content/content";
 import { Footer } from "./footer/footer";
 
 export interface IMainLayoutProps {
+  /**
+   * The content to inject in the layout
+   */
   children?: ReactNode;
 }
 

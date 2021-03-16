@@ -6,6 +6,9 @@ import { Scrollbar } from "../scrollbar/scrollbar";
 import classnames from "classnames";
 
 export interface ICarouselProps {
+  /**
+   * The carousel items
+   */
   children?: ReactNode;
   /**
    * Custom CSS class

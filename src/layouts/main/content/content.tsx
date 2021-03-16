@@ -2,6 +2,9 @@ import React, { ReactNode } from "react";
 import "./content.scss";
 
 export interface IContentProps {
+  /**
+   * The actual content
+   */
   children?: ReactNode;
 }
 

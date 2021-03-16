@@ -1,0 +1,68 @@
+@import "/src/assets/styles/variables";
+
+.hmi-pulldown {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: column;
+
+  .hmi-pulldown-box-container {
+    width: 70%;
+
+    margin: 0 auto;
+
+    flex: 1 0 auto;
+
+    .hmi-pulldown-box {
+      height: 100%;
+      padding-bottom: $spacing-sm;
+
+      .hmi-pulldown-box-inner {
+        display: flex;
+        height: 100%;
+
+        flex-direction: column;
+
+        border-left: 0.1rem solid $color-primary;
+        border-right: 0.1rem solid $color-primary;
+        border-bottom: 0.1rem solid $color-primary;
+
+        background-color: $gray-light;
+
+        box-shadow: $box-shadow-default;
+      }
+    }
+
+    .hmi-pulldown-content {
+      padding: $spacing-lg + $spacing-md;
+      flex: 1 0 auto;
+    }
+
+    .hmi-pulldown-footer {
+      padding: $spacing-md;
+      margin: 0 $spacing-sm;
+      border-top: 0.05rem solid $gray-lighter;
+      text-align: right;
+    }
+  }
+
+  .hmi-pulldown-handle-container {
+    width: 2rem;
+
+    margin: 0 auto;
+    padding: 0 $spacing-md $spacing-md;
+
+    box-sizing: content-box;
+    pointer-events: all;
+    cursor: pointer;
+
+    .hmi-pulldown-handle {
+      width: 100%;
+      height: 0.12rem;
+
+      background-color: $color-primary;
+    }
+  }
+}

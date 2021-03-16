@@ -1,10 +1,12 @@
+@import "/src/assets/styles/variables";
+
 .hmi-main {
   display: flex;
   height: 100%;
   flex-direction: column;
 
   > div:not(:last-child) {
-    border-bottom: 0.05rem solid #444;
+    border-bottom: 0.05rem solid $gray-lighter;
   }
 
   .hmi-header {

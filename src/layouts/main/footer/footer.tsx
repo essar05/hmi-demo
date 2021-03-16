@@ -2,12 +2,10 @@ import React from "react";
 import "./footer.scss";
 import { Button } from "../../../components/button/button";
 
-export interface IFooterProps {}
-
 /**
  * Main layout footer
  */
-export const Footer: React.FunctionComponent<IFooterProps> = () => {
+export const Footer: React.VoidFunctionComponent = () => {
   return (
     <div className="hmi-footer">
       <Button label="Back" />
