@@ -1,14 +1,14 @@
 @import "/src/assets/styles/variables";
 
 .hmi-carousel-container {
+  display: flex;
   position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
 
-  padding: $spacing-md + $spacing-xs 0 0 0;
-
-  cursor: pointer;
+  flex-direction: column;
+  justify-content: flex-end;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -18,7 +18,11 @@
   user-select: none;
 
   .hmi-carousel {
-    display: flex;
     position: absolute;
+    display: inline-flex;
+    top: 0;
+
+    cursor: pointer;
   }
+
 }

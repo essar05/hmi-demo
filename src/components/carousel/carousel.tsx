@@ -2,9 +2,15 @@ import React, { ReactNode, useCallback, useEffect, useRef, useState } from "reac
 import "./carousel.scss";
 import { useDrag, useWheel } from "react-use-gesture";
 import { animated, useSpring } from "react-spring";
+import { Scrollbar } from "../scrollbar/scrollbar";
+import classnames from "classnames";
 
 export interface ICarouselProps {
   children?: ReactNode;
+  /**
+   * Custom CSS class
+   */
+  className?: string;
 }
 
 interface IItemMetadata {
@@ -14,10 +20,12 @@ interface IItemMetadata {
 
 const RUBBERBAND_WIDTH = 50;
 
+const AnimatedScrollbar = animated(Scrollbar);
+
 /**
  * Display children as a carousel. Use the scroll wheel or click + drag to scroll it
  */
-export const Carousel: React.FunctionComponent<ICarouselProps> = ({children}) => {
+export const Carousel: React.FunctionComponent<ICarouselProps> = ({children, className}) => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -38,6 +46,10 @@ export const Carousel: React.FunctionComponent<ICarouselProps> = ({children}) =>
 
   // returns the left side offset of the closest item to the current offset
   const getSnapOffset = useCallback((currentOffset: number): number => {
+    if (lowerBound === 0) {
+      return 0;
+    }
+
     const snapToItemIndex = itemsMetadata.findIndex(itemMetadata => {
       return Math.abs(currentOffset) <= itemMetadata.offset + itemMetadata.width / 2;
     });
@@ -47,11 +59,15 @@ export const Carousel: React.FunctionComponent<ICarouselProps> = ({children}) =>
     }
 
     return currentOffset;
-  }, [itemsMetadata]);
+  }, [itemsMetadata, lowerBound]);
 
   // returns the lower offset of the scrolling bounds
   const getLowerBound = useCallback((): number => {
     const bound = - Math.max(carouselWidth - containerWidth, 0);
+
+    if (bound === 0) {
+      return bound;
+    }
 
     let availableWidth = containerWidth;
 
@@ -161,7 +177,7 @@ export const Carousel: React.FunctionComponent<ICarouselProps> = ({children}) =>
   }, []);
 
   return (
-    <div className="hmi-carousel-container" ref={containerRef}>
+    <div className={classnames("hmi-carousel-container", className)} ref={containerRef}>
       <animated.div
         className="hmi-carousel"
         {...bindDragGesture()}
@@ -177,6 +193,8 @@ export const Carousel: React.FunctionComponent<ICarouselProps> = ({children}) =>
           </div>
         ))}
       </animated.div>
+
+      <AnimatedScrollbar progress={carouselOffset.to((offset) => offset / lowerBound * 100)} />
     </div>
   );
 };

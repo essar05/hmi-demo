@@ -12,4 +12,6 @@ export default {
 const Template: Story<ICarouselProps> = (args) => <CCarousel {...args} />;
 
 export const Carousel = Template.bind({});
-Carousel.args = {};
+Carousel.args = {
+  children: ["one", "two"]
+};

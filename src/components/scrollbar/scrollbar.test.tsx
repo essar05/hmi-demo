@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { ProgramList } from "./program-list";
+import { Scrollbar } from "./scrollbar";
 
 test("renders", () => {
-  render(<ProgramList programs={[]} />);
+  render(<Scrollbar progress={0} />);
 });

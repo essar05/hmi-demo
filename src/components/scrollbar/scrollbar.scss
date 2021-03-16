@@ -1,0 +1,20 @@
+@import "/src/assets/styles/variables";
+
+.hmi-scrollbar {
+  height: 0.1rem;
+  width: calc(100% - #{$spacing-md * 2});
+  place-self: end;
+  align-self: end;
+  justify-self: flex-end;
+  position: relative;
+  margin: 0 $spacing-md;
+
+
+  .hmi-scrollbar-progress {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+
+    background-color: $color-primary;
+  }
+}
